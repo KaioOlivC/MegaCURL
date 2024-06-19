@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo Will logout Akina!
+echo Will logout the current token\'s user!
 token=$(cat .token.txt)
 
 curl -s -X POST \

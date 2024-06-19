@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo Will reset the password for Akina!
+echo Will edit the password!
 token=$(cat .token.txt)
 
 curl -X POST \
