@@ -146,7 +146,7 @@ echo ""
 ```
 
 First, in the headers, change the content type to *multipart/form-data*.
-Then, for each file, add a *-F* line. Inside, you'll do *field name*=@*file*.
+Then, for each file, add a *-F* line. Inside, you'll do '*field name*=@*file*'.
 Easy. To make things simple, leave the files in the routes folder. And yes, send
 them to the repo, so your test will still work for others easily.
 
