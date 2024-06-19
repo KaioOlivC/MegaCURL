@@ -15,8 +15,6 @@ body='{
 	"justification":        "Because I felt like it"
 }'
 
-echo $body
-
 curl -X PUT \
     -H "token: $token" \
     -H "Content-Type: application/json" \

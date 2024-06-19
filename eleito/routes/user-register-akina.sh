@@ -2,6 +2,9 @@
 
 echo Will register Akina!
 
+dbPrompt=$(cat ../.dbPrompt.txt)
+dbName=$(cat ../.dbName.txt)
+
 body='{
 	"name":     "Akina Nakamori",
 	"nickname": "Akina-chan",
@@ -15,4 +18,8 @@ curl -X POST \
     -d "$body" \
     localhost:3000/user/register | jq
 echo ""
+
+echo Altering DB to confirm email...
+$dbPrompt 'UPDATE Users SET isEmailConfirmed=1 WHERE name="Akina Nakamori"' $dbName
+
 echo Done!
