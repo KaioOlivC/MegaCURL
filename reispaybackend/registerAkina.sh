@@ -3,24 +3,24 @@
 echo Will register Akina!
 
 body='{
-	"birthday": "1965-07-13",
-	"CPF": "01234567890",
-	"email": "akina@jpop.co.jp",
-	"firstName": "Akina",
-	"lastName": "Nakamori",
-	"phone": "987654321",
-	"password": "Akina1*pass",
+	"birthday":     "1965-07-13",
+	"CPF":          "01234567890",
+	"email":        "akina@jpop.co.jp",
+	"firstName":    "Akina",
 	"fourDigitPin": "1234",
-    "address": {
+	"lastName":     "Nakamori",
+	"password":     "Akina1*pass",
+	"phone":        "987654321",
+    "address":      {
         "additionalDetails": "Pink Tower",
-        "city": "Salvador",
-        "neighborhood": "Brotas",
-        "number": "1",
-        "referencePoints": "Near Akinas Studio",
-        "thoroughfare": "Pink",
-        "zipCode": "41720003",
-        "state": "BA",
-        "thoroughfareType": "Rua"
+        "city":              "Salvador",
+        "neighborhood":      "Brotas",
+        "number":            "1",
+        "referencePoints":   "Near Akinas Studio",
+        "state":             "BA",
+        "thoroughfare":      "Pink",
+        "thoroughfareType":  "Rua",
+        "zipCode":           "41720003"
     }
 }'
 
