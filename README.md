@@ -87,7 +87,7 @@ my_string='string 4'
 var='string 1''string 2''string 3'$my_string
 ```
 The result is that the strings are concatenated, so var becomes *"string 1string
-2string 3string 4".
+2string 3string 4"*.
 
 Oh, and remember this is a JSON, don't put commas at the end of an array or an
 object!
