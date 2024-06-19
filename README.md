@@ -248,7 +248,7 @@ fi
 ```
 
 If the file already exists, it'll be **overwritten**.
-The if checks if you found a value to begin with.
+The *if* checks if you found a value to begin with.
 
 ## Altering DB
 
