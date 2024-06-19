@@ -265,8 +265,8 @@ Give it this content:
 > mariadb -u USERNAME -pPASSWORD -e
 
 Replace *mariadb*, USERNAME and PASSWORD accordingly. And yes, the spacing is 
-right, *-u USERNAME* has a space in the middle, *-pPASSWORD* is all mushed 
-together, and neither use quotes. The final *-e* will be useful later so we make
+right, "*-u USERNAME*" has a space in the middle, "*-pPASSWORD*" is all mushed 
+together, and neither use quotes. The final "*-e*" will be useful later so we make
 use of it in *.sh* files.
 
 P.S. **MAKE SURE TO GIT IGNORE THESE, AS IT HAS YOUR PASSWORD!!**
