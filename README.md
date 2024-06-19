@@ -12,7 +12,7 @@ For every project to be tested, we have its folder at root, and inside them, we
 have two folders (if one is missing, its because GIT won't sync empty folders)
 called *routes* and *scripts*. Inside *routes*, each route of your API should 
 have at least one *.sh* to call it. The *scripts* folder contains scripts that
-call multiple  *.sh* files from routes to run a bunch of commands all at once.
+call multiple  *.sh* files from *routes* to run a bunch of commands all at once.
 
 ## Goals
 
