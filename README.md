@@ -253,7 +253,7 @@ The *if* checks if you found a value to begin with.
 ## Altering DB
 
 First, you'll need to know SQL to do this, and have terminal access to your 
-databases. Since this changes from person to person, here is our recommendation.
+databases. Since this changes from person to person, here is my recommendation.
 First, add these two files at the root of your project, next to the folders 
 *routes* and *scripts*: *.dbPrompt.txt* and *.dbName.txt*.
 
