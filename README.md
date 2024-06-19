@@ -117,7 +117,7 @@ The second is pretty much fixed, unless you are sending files. Just copy it as
 is.
 
 And yes, -d "$body" refers to our body variable. If you don't need one, you just
-don't create a body and don't remove this line.
+don't create a body and then remove this line.
 
 Oh, a very important thing: to split a command in multiple lines in bash, you 
 end the lines with \\. This tells bash that the command continues in the next 
