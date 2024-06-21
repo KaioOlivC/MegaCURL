@@ -1,0 +1,1 @@
+mariadb -u kaio -p789321kMariaDB8 -e
