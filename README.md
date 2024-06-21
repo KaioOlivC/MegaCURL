@@ -12,7 +12,7 @@ For every project to be tested, we have its folder at root, and inside them, we
 have two folders (if one is missing, its because GIT won't sync empty folders)
 called *routes* and *scripts*. Inside *routes*, each route of your API should 
 have at least one *.sh* to call it. The *scripts* folder contains scripts that
-call multiple  *.sh* files from routes to run a bunch of commands all at once.
+call multiple  *.sh* files from *routes* to run a bunch of commands all at once.
 
 ## Goals
 
@@ -87,7 +87,7 @@ my_string='string 4'
 var='string 1''string 2''string 3'$my_string
 ```
 The result is that the strings are concatenated, so var becomes *"string 1string
-2string 3string 4".
+2string 3string 4"*.
 
 Oh, and remember this is a JSON, don't put commas at the end of an array or an
 object!
@@ -117,7 +117,7 @@ The second is pretty much fixed, unless you are sending files. Just copy it as
 is.
 
 And yes, -d "$body" refers to our body variable. If you don't need one, you just
-don't create a body and don't remove this line.
+don't create a body and then remove this line.
 
 Oh, a very important thing: to split a command in multiple lines in bash, you 
 end the lines with \\. This tells bash that the command continues in the next 
@@ -146,7 +146,7 @@ echo ""
 ```
 
 First, in the headers, change the content type to *multipart/form-data*.
-Then, for each file, add a *-F* line. Inside, you'll do *field name*=@*file*.
+Then, for each file, add a *-F* line. Inside, you'll do '*field name*=@*file*'.
 Easy. To make things simple, leave the files in the routes folder. And yes, send
 them to the repo, so your test will still work for others easily.
 
@@ -248,12 +248,12 @@ fi
 ```
 
 If the file already exists, it'll be **overwritten**.
-The if checks if you found a value to begin with.
+The *if* checks if you found a value to begin with.
 
 ## Altering DB
 
 First, you'll need to know SQL to do this, and have terminal access to your 
-databases. Since this changes from person to person, here is our recommendation.
+databases. Since this changes from person to person, here is my recommendation.
 First, add these two files at the root of your project, next to the folders 
 *routes* and *scripts*: *.dbPrompt.txt* and *.dbName.txt*.
 
@@ -265,8 +265,8 @@ Give it this content:
 > mariadb -u USERNAME -pPASSWORD -e
 
 Replace *mariadb*, USERNAME and PASSWORD accordingly. And yes, the spacing is 
-right, *-u USERNAME* has a space in the middle, *-pPASSWORD* is all mushed 
-together, and neither use quotes. The final *-e* will be useful later so we make
+right, "*-u USERNAME*" has a space in the middle, "*-pPASSWORD*" is all mushed 
+together, and neither use quotes. The final "*-e*" will be useful later so we make
 use of it in *.sh* files.
 
 P.S. **MAKE SURE TO GIT IGNORE THESE, AS IT HAS YOUR PASSWORD!!**
