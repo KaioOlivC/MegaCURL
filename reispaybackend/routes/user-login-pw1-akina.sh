@@ -15,10 +15,4 @@ response=$(
 )
 echo $response
 
-token=$(echo $response | jq -r ".token")
-if [ $token != "null" ]; then
-    echo Saving token...
-    echo $token > .token.txt
-fi
-
 echo Done!

@@ -3,9 +3,9 @@
 echo Will try a purchase with a good credit card
 
 body='{
-    "callbackURL":  "localhost:3000/payment/webhook/test",
-    "description":  "Akina-chan bikini poster",
+    "callbackURL":  "http://192.168.15.4:3000/payment/webhook/creditCard/mypaymentid",
     "externalId":   "Payment ID",
+    "cardDescription":  "Akina-chan bikini poster",
     "installments": 2,
     "value":        50000,
     "customer": {

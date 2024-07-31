@@ -30,7 +30,6 @@ response=$(
 )
 echo $response | jq
 minuteId=$(echo $response | jq -r ".id")
-echo $minuteId
 
 if [ $minuteId != "null" ]; then
     echo Saving minute id...
