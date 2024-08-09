@@ -5,7 +5,7 @@ token=$(cat .token.txt)
 
 curl -s -X GET \
     -H "token: $token" \
-    localhost:3000/person/logout | jq
+    localhost:3000/auth/logout | jq
 
 echo ""
 echo Deleting token...
