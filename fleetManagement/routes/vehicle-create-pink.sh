@@ -14,7 +14,9 @@ body='{
 	"ownerCNPJ":       "98787341000153",
 	"IPVAPrice":       500.00,
 	"CRLVPrice":       399.90,
+	"DPVATPrice":      399.90,
     "colorInDocument": "Rosa Choque",
+    "restrictions":    false,
 	"details":         "A B C"
 }'
 
